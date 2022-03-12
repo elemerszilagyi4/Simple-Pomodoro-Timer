@@ -78,7 +78,7 @@ def count_down(count):
 window = Tk()
 window.title("Pomodoro timer")
 window.config(padx=50, pady=50, bg=YELLOW)
-# window.geometry("550x550")
+
 window.resizable(False, False)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
@@ -98,7 +98,7 @@ start = Button(text="Start", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 25, "bold"), 
                command=start_timer)
 
 label.grid(row=0, column=0, columnspan=3)
-# column=0, row=0, columnspan=4, sticky='e'
+
 start.grid(row=2, column=0)
 reset.grid(row=2, column=2)
 canvas.grid(row=1, column=1)
